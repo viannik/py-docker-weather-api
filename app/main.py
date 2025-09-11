@@ -25,11 +25,11 @@ def get_weather() -> None:
     location = data["location"]
     current = data["current"]
 
-    print(f"Weather in {location["name"]}, {location["country"]}: ")
-    print(f"Temperature: {current["temp_c"]}°C")
-    print(f"Condition: {current["condition"]["text"]}")
-    print(f"Humidity: {current["humidity"]}%")
-    print(f"Wind: {current["wind_kph"]} km/h")
+    print(f'Weather in {location["name"]}, {location["country"]}: ')
+    print(f'Temperature: {current["temp_c"]}°C')
+    print(f'Condition: {current["condition"]["text"]}')
+    print(f'Humidity: {current["humidity"]}%')
+    print(f'Wind: {current["wind_kph"]} km/h')
 
 
 if __name__ == "__main__":
